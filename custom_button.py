@@ -2,7 +2,6 @@ from tkinter import Button
 from functools import partial
 
 class CustomButton:
-    
 
     def __init__(self, interface, text, pos_x, pos_y, size_x=2, size_y=2) -> None:
         
