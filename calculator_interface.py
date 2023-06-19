@@ -3,15 +3,13 @@ from screen import Screen
 from custom_button import CustomButton
 
 import tkinter as tk
-from functools import partial
 
 class CalculatorInterface():
 
     def __init__(self) -> None:
         self.window     =        tk.Tk()
         self.window.geometry('360x370') 
-
-
+        
         self.screen        =       Screen(self)
         
         self.C               = CustomButton(self, "C",   18, 310)
@@ -43,13 +41,10 @@ class CalculatorInterface():
         self.divide          = CustomButton(self, "÷",   265, 190)
         self.sq_rt           = CustomButton(self, "√",   265, 130)
 
-
         self.mem_plus        = CustomButton(self, "M+",  310, 310)
         self.mem_minus       = CustomButton(self, "M-",  310, 250)
         self.mem_read        = CustomButton(self, "MR",  310, 190)
         self.mem_clear       = CustomButton(self, "MC",  310, 130)
-
-        
 
     def run(self):
         self.window.mainloop()
